@@ -1,8 +1,14 @@
+@import url('https://fonts.cdnfonts.com/css/cheeseburga');
+@import url('https://fonts.cdnfonts.com/css/baron-kuffner');
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.cdnfonts.com/css/bebas-neue');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
+
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -14,14 +20,81 @@
   }
 }
 
+} */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+                                                
 }
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  .f-chessburga{
+    font-family: 'CHEESEBURGA', sans-serif;
+  }
+  .f-baron{
+    font-family: 'Baron Kuffner', sans-serif;
+  }
+  .f-bebas{
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  .r3d{
+      /* margin: 50px; */
+      /* width: 100px; */
+      /* height: 100px; */
+      transform-style: preserve-3d;
+      transform: rotate3d(1, 1, 1, 30deg);
+    }
+    /* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  @apply rounded-full bg-blend-normal h-10
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+/* Custom scrollbar 2*/
+.custom-scrollbar2::-webkit-scrollbar {
+  width: 8px;
+  @apply h-10
+}
+
+.custom-scrollbar2::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  @apply rounded-full bg-blend-normal h-10
+}
+
+.custom-scrollbar2::-webkit-scrollbar-thumb {
+  background-color: #843afc;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+  
+}
+
+.custom-scrollbar2::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+/* Custom scrollbar 3*/
+
+
+.custom-scrollbar3::-webkit-scrollbar-thumb {
+  background-color: #90ffae;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+  
+}
+
+    
+  
 }

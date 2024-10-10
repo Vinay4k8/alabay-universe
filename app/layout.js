@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Image from "next/image";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,7 +24,17 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+      <div className="relative max-h-screen w-full overflow-hidden">
+      {/* Background Image */}
+     
+
+      {/* Content on top of the background */}
+      <div className="">
         {children}
+        
+      </div>
+      
+    </div>
       </body>
     </html>
   );
